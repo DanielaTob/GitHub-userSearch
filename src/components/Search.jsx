@@ -24,11 +24,27 @@ const Search = () => {
 
     if (perfiluser) {
         setData(perfiluser);
-      }
+    }
 
     };
 
-    
+    /*     const submitHnadler = async e =>{
+        e.preventDefault();
+        fetch(`https://api.github.com/users/${username}`)
+        .then((response) =>{
+            return response.json()
+        }).then((username)=>{
+            setUsername(username)
+        })
+        .catch((err) => {
+            console.log(err)
+        })
+    }
+
+    useEffect(() =>{
+        data();
+    },[setData]) */
+
 
   return (
     

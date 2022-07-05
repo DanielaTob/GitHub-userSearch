@@ -10,7 +10,7 @@ const Card = ({data}) => {
 
   return (
     <div className='flex justify-center items-center pt-4'>
-      <div className='bg-bluelight rounded-md w-[600px] h-[358px]'>
+      <div className='bg-bluelight rounded-md w-[600px] pb-10'>
         
         
         <div className='flex'>
@@ -88,8 +88,8 @@ const Card = ({data}) => {
 
           
 
-            <div className='grid grid-cols-2 px-2 pt-6 text-white'>
-
+            <div className='grid grid-cols-2 gap-4 px-2 pt-6 text-white'>
+              
               <div className='flex gap-2'>
                 <MdLocationOn className='mt-1'/>
                 {data.location ? (
@@ -109,10 +109,10 @@ const Card = ({data}) => {
                 
               </div>
 
-              <div className='flex gap-2 pt-2'>
-                <TbLink/>
-                {data.html_url ? (
-                  <p className='text-sm'>{data.html_url}</p>
+              <div className='gap-2 flex pt-2'>
+                <TbLink />
+                {data.blog ? (
+                  <p className='text-sm break-normal overflow-hidden'>{data.blog}</p>
                 ) : (
                   <p className='text-sm text-gray'>Not Available</p>
                 )}
@@ -127,7 +127,6 @@ const Card = ({data}) => {
                 )}
                 
               </div>
-
 
 
             </div>

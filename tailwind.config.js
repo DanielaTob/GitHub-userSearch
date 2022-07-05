@@ -6,15 +6,15 @@ module.exports = {
   ],
   theme: {
     colors:{
-      'bluedark': '#141C2F',
-      'bluelight': '#1F2A48',
-      'blue': '#0079FE',
+      'bluedark': '#0A0C10',
+      'bluelight': '#272B33',
+      'blue': '#C38000',
       'white': '#ffffff',
       'gray': '#AAACAB',
     },
     extend: {
       fontFamily: {
-        manrope: ["Manrope", "sans-serif"],
+        mono: ['Space Mono', "monospace"],
       },
     },
   },
